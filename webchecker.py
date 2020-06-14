@@ -1,12 +1,18 @@
 import urllib.request
 import urllib.error
 import os
+import datetime
 # from tcp_latency import measure_latency
 
 
-with open('listWeb/test.txt') as file:
-    dump = file.read()
-    dump = dump.splitlines()
+def getListFile():
+    with open('listWeb/test.txt') as file:
+        """
+        Get List Data From txt File 
+        """
+        dump = file.read()
+        dump = dump.splitlines()
+        return dump
 
 
 def checkLatency(hostname):
@@ -18,20 +24,35 @@ def checkLatency(hostname):
     return latency
 
 
-for dump in dump:
-    try:
-        r = urllib.request.urlopen("http://"+dump)
-    except Exception as e:
-        print(dump + ' ' + str(e))
-        print('#'*60)
+def webChecker():
 
-    if r.getcode() == 200:
-        print("\nWebsite " + dump + " NORMAL")
-        # checkLatency(dump)
-        print('')
-        # print(measure_latency(host=url))
-        print('#'*60)
-    else:
-        print("Website " + dump + " Gangguan")
-        print("Error Code " + r.getcode() + "\n")
-        print('#'*60)
+    link = getListFile()
+
+    print(datetime.datetime.now())
+    print('#'*60 + '\n')
+
+    for link in link:
+        try:
+            r = urllib.request.urlopen("http://"+link)
+        except Exception as e:
+            """
+            Check Error by Code
+            """
+            print("\nWebsite " + link + " Sedang GANGGUAN \n")
+            print(link + ' ' + str(e) + '\n')
+            print('#'*60)
+
+        if r.getcode() == 200:
+            print("\nWebsite " + link + " NORMAL")
+            print("Status 200 HTTP OK")
+            # checkLatency(link)
+            print('')
+            # print(measure_latency(host=url))
+            print('#'*60)
+        else:
+            """
+            Check Error by Status Code
+            """
+            print("\nWebsite " + link + " Sedang GANGGUAN")
+            print("Error Code " + format(r.getcode()) + "\n")
+            print('#'*60)
