@@ -3,6 +3,8 @@ import urllib.error
 import os
 import datetime
 import getFile
+import outputText
+from telegramBot import send_message
 # from tcp_latency import measure_latency
 
 
@@ -18,8 +20,6 @@ def checkLatency(hostname):
 def webChecker(website):
 
     link = getFile.getListFile('listWeb/' + website + '.txt')
-    print('\n' + format(datetime.datetime.now()) + '\n')
-    print('#'*60 + '\n')
 
     for link in link:
         try:
@@ -28,21 +28,19 @@ def webChecker(website):
             """
             Check Error by Code
             """
-            print("\nWebsite " + link + " Sedang GANGGUAN \n")
-            print(link + ' ' + str(e) + '\n')
-            print('#'*60)
+            # telegramBot.send_message('error')
+            outputText.outputText(
+                "\n" + link + " ❌ \n" + str(e))
 
         if r.getcode() == 200:
-            print("\nWebsite " + link + " NORMAL")
-            print("Status 200 HTTP OK")
+            outputText.outputText("\n" + link + " ✅")
             # checkLatency(link)
-            print('')
             # print(measure_latency(host=url))
-            print('#'*60)
         else:
             """
             Check Error by Status Code
             """
-            print("\nWebsite " + link + " Sedang GANGGUAN")
-            print("Error Code " + format(r.getcode()) + "\n")
-            print('#'*60)
+            outputText.outputText(
+                "\n" + link + " ❌ \nError Code " + format(r.getcode()))
+    message = open(r"output.txt", 'r')
+    send_message(message.read())
