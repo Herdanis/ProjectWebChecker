@@ -4,9 +4,8 @@ import time
 import schedule
 import time
 
-webchecker.webChecker()
-schedule.every().minutes.do(webchecker.webChecker)
-schedule.every().minutes.do(webchecker.webChecker)
+webchecker.webChecker('test')
+schedule.every().minutes.do(webchecker.webChecker, 'test')
 while True:
     schedule.run_pending()
     time.sleep(1)

@@ -2,17 +2,8 @@ import urllib.request
 import urllib.error
 import os
 import datetime
+import getFile
 # from tcp_latency import measure_latency
-
-
-def getListFile():
-    with open('listWeb/test.txt') as file:
-        """
-        Get List Data From txt File 
-        """
-        dump = file.read()
-        dump = dump.splitlines()
-        return dump
 
 
 def checkLatency(hostname):
@@ -24,11 +15,10 @@ def checkLatency(hostname):
     return latency
 
 
-def webChecker():
+def webChecker(website):
 
-    link = getListFile()
-
-    print(datetime.datetime.now())
+    link = getFile.getListFile('listWeb/' + website + '.txt')
+    print('\n' + format(datetime.datetime.now()) + '\n')
     print('#'*60 + '\n')
 
     for link in link:
