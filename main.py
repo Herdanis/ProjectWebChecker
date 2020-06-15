@@ -13,7 +13,7 @@ listWebTest = ['intentA', 'intentB', 'opdA', 'opdB']
 
 
 def cek():
-    for listW in listWebTest:
+    for listW in listWeb:
         webchecker.webChecker(listW)
 
 
