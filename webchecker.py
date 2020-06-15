@@ -30,10 +30,10 @@ def webChecker(website):
             """
             # telegramBot.send_message('error')
             outputText.outputText(
-                "\n" + link + " ❌ \n" + str(e))
+                link + " ❌ \n" + str(e))
 
         if r.getcode() == 200:
-            outputText.outputText("\n" + link + " ✅")
+            outputText.outputText(link + " ✅")
             # checkLatency(link)
             # print(measure_latency(host=url))
         else:
@@ -41,6 +41,6 @@ def webChecker(website):
             Check Error by Status Code
             """
             outputText.outputText(
-                "\n" + link + " ❌ \nError Code " + format(r.getcode()))
+                link + " ❌ \nError Code " + format(r.getcode()))
     message = open(r"output.txt", 'r')
     send_message(message.read())

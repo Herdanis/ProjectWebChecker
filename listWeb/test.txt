@@ -4,4 +4,4 @@ dashboard.madiunkota.go.id
 lpse.madiunkota.go.id
 satudata.madiunkota.go.id
 portal.madiunkota.net
-portal.madiunkota.go.id
+rap.madiunkota.go.id

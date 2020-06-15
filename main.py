@@ -7,6 +7,8 @@ import time
 
 # print(time.ctime())
 
+webchecker.webChecker('test')
+
 
 def cek():
     # print(time.ctime())

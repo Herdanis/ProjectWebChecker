@@ -10,7 +10,6 @@ satudata.madiunkota.go.id
 integrasi.madiunkota.go.id
 servicedesk.madiunkota.go.id
 portal.madiunkota.net
-rapat.madiunkota.go.id
 bakul.madiunkota.go.id
 coklit.madiunkota.go.id
 gcio.madiunkota.go.id
