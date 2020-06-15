@@ -7,7 +7,7 @@ import time
 
 # print(time.ctime())
 
-webchecker.webChecker('test')
+webchecker.webChecker('intentB')
 
 
 def cek():

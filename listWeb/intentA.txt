@@ -1,6 +1,7 @@
 madiunkota.go.id
 ekinerja.madiunkota.go.id
 ekinerja2019.madiunkota.go.id
+sikd.madiunkota.go.id
 madiuntoday.id
 dashboard.madiunkota.go.id
 lpse.madiunkota.go.id

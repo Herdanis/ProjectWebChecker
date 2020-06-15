@@ -5,3 +5,4 @@ lpse.madiunkota.go.id
 satudata.madiunkota.go.id
 portal.madiunkota.net
 rap.madiunkota.go.id
+covid19.madiunkota.go.id

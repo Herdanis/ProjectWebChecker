@@ -22,8 +22,11 @@ def webChecker(website):
     link = getFile.getListFile('listWeb/' + website + '.txt')
 
     for link in link:
+        code = 000
         try:
             r = urllib.request.urlopen("http://"+link)
+            report(r.getcode(), link)
+            code = r.getcode()
         except Exception as e:
             """
             Check Error by Code
@@ -31,16 +34,18 @@ def webChecker(website):
             # telegramBot.send_message('error')
             outputText.outputText(
                 link + " ❌ \n" + str(e))
-
-        if r.getcode() == 200:
-            outputText.outputText(link + " ✅")
-            # checkLatency(link)
-            # print(measure_latency(host=url))
-        else:
-            """
-            Check Error by Status Code
-            """
-            outputText.outputText(
-                link + " ❌ \nError Code " + format(r.getcode()))
     message = open(r"output.txt", 'r')
     send_message(message.read())
+
+
+def report(data, url):
+    if data == 200:
+        outputText.outputText(url + " ✅")
+        # checkLatency(link)
+        # print(measure_latency(host=url))
+    else:
+        """
+        Check Error by Status Code
+        """
+        outputText.outputText(
+            url + " ❌ \nError Code " + format(data))
