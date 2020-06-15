@@ -7,13 +7,17 @@ import time
 
 # print(time.ctime())
 
-webchecker.webChecker('intentB')
+listWeb = ['intentA', 'intentB', 'intentC', 'intentD',
+           'intentE', 'opdA', 'opdB', 'opdC', 'opdD', 'opdE']
+listWebTest = ['intentA', 'intentB', 'opdA', 'opdB']
 
 
 def cek():
-    # print(time.ctime())
-    webchecker.webChecker('intent')
+    for listW in listWebTest:
+        webchecker.webChecker(listW)
 
+
+cek()
 
 schedule.every().hours.at(':01').do(cek)
 while True:
