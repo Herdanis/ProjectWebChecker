@@ -14,7 +14,7 @@ print("sistem akan mengecek " + hours + " sekali")
 
 
 def cek():
-    for listW in listWebTest:
+    for listW in listWeb:
         webchecker.webChecker(listW)
 
 
