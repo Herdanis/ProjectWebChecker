@@ -3,3 +3,4 @@ satpol.madiunkota.go.id
 setdprd.madiunkota.go.id
 umum.madiunkota.go.id
 dpkp.madiunkota.go.id
+putra.madiunkota.go.id

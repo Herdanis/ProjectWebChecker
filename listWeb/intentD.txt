@@ -10,7 +10,6 @@ perizinan.madiunkota.go.id
 pendekarkelurahan.madiunkota.go.id
 pemburu.madiunkota.go.id
 belajar.madiunkota.go.id
-lapor.madiunkota.go.id
 sik19.madiunkota.go.id
 sik.madiunkota.go.id
 simonev.madiunkota.go.id

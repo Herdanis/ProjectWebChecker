@@ -1,7 +1,7 @@
+disnaker.madiunkota.go.id
 disperta.madiunkota.go.id
 dlh.madiunkota.go.id
-pilem.madiunkota.go.id
-dpkp.madiunkota.go.id
+ujiau.madiunkota.go.id
 dpmptspkum.madiunkota.go.id
 dprd.madiunkota.go.id
 ekokesra.madiunkota.go.id
@@ -17,4 +17,3 @@ perdagangan.madiunkota.go.id
 perpustakaan.madiunkota.go.id
 pkk.madiunkota.go.id
 ppid.madiunkota.go.id
-putra.madiunkota.go.id

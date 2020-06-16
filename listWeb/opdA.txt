@@ -17,4 +17,3 @@ disbudparpora.madiunkota.go.id
 ayokemadiun.madiunkota.go.id
 disdik.madiunkota.go.id
 dishub.madiunkota.go.id
-disnaker.madiunkota.go.id

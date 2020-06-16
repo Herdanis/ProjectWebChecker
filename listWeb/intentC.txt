@@ -17,4 +17,4 @@ infokerja.madiunkota.go.id
 jdih.madiunkota.go.id
 koni.madiunkota.go.id
 kwspp.madiunkota.net
-kwd.madiunkota.go.id
+kwd.madiunkota.net

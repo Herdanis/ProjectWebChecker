@@ -2,7 +2,6 @@ simpeg.madiunkota.go.id
 wbs.madiunkota.go.id
 umkm.madiunkota.go.id
 ujikir.madiunkota.go.id
-ujiau.madiunkota.go.id
 smartcity.madiunkota.go.id
 ssp.madiunkota.net
 ssbp.madiunkota.net
@@ -10,7 +9,6 @@ sppt.madiunkota.go.id
 sppd.madiunkota.net
 analisaberita.madiunkota.go.id
 api.madiunkota.go.id
-ayokemadiun.madiunkota.go.id
 coklit-ws.madiunkota.go.id
 coklit.madiunkota.go.id
 dev.madiunkota.go.id

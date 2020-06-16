@@ -1,6 +1,5 @@
 sipd.madiunkota.go.id
 sipaud.madiunkota.go.id
-sipari.madiunkota.go.id
 sipandu.madiunkota.go.id
 sip.madiunkota.go.id
 simtaru.madiunkota.go.id
