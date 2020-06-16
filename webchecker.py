@@ -17,7 +17,7 @@ def checkLatency(hostname):
     return latency
 
 
-def webChecker(website):
+def webChecker(website, sendId):
 
     link = getFile.getListFile('listWeb/' + website + '.txt')
 
@@ -26,7 +26,6 @@ def webChecker(website):
         try:
             r = urllib.request.urlopen("http://"+link)
             report(r.getcode(), link)
-            code = r.getcode()
         except Exception as e:
             """
             Check Error by Code
@@ -35,7 +34,7 @@ def webChecker(website):
             outputText.outputText(
                 link + " ❌ \n" + str(e))
     message = open(r"output.txt", 'r')
-    send_message(message.read())
+    send_message(message.read(), sendId)
 
 
 def report(data, url):

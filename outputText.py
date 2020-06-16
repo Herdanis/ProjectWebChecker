@@ -1,9 +1,11 @@
 import datetime
 import time
 
-time = format(time.ctime()) + '\n'
-with open("output.txt", 'a') as output:
-    print(time, file=output)
+
+def initTime():
+    time = format(time.ctime()) + '\n'
+    with open("output.txt", 'a') as output:
+        print(time, file=output)
 
 
 def outputText(text):
