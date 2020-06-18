@@ -5,7 +5,6 @@ puskesmasmanguharjo.madiunkota.go.id
 puskesmasdemangan.madiunkota.go.id
 puskesmasbanjarejo.madiunkota.go.id
 ppdb.madiunkota.go.id
-ppdb.madiunkota.net
 perizinan.madiunkota.go.id
 pendekarkelurahan.madiunkota.go.id
 pemburu.madiunkota.go.id
@@ -17,3 +16,4 @@ simjab.madiunkota.go.id
 simaya.madiunkota.go.id
 silat.madiunkota.go.id
 sikumis.madiunkota.go.id
+sikd.madiunkota.net
