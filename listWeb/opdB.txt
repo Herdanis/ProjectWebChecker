@@ -3,7 +3,6 @@ disperta.madiunkota.go.id
 dlh.madiunkota.go.id
 ujiau.madiunkota.go.id
 dpmptspkum.madiunkota.go.id
-dprd.madiunkota.go.id
 ekokesra.madiunkota.go.id
 gemmmass.madiunkota.go.id
 hukum.madiunkota.go.id
